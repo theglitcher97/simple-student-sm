@@ -1,8 +1,12 @@
-<nav *ngIf="studentsList$ | async as studentsList">
-  <ul>
-    <li *ngFor="let student of studentsList">
-      <a [routerLink]="[student.id]">{{student.first_name + " " + student.last_name}}</a>
-    </li>
-  </ul>
-</nav>
-<router-outlet></router-outlet>
+<div class="container">
+  <nav *ngIf="studentsList$ | async as studentsList">
+    <ul>
+      <li *ngFor="let student of studentsList" routerLinkActive="active">
+        <a [routerLink]="[student.id]" >{{student.first_name + " " + student.last_name}}</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="student-details">
+    <router-outlet></router-outlet>
+  </div>
+</div>
