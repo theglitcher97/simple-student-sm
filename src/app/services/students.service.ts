@@ -1,5 +1,7 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { studentResponseListType } from '../domain/types/students-response-list.type';
 import { STUDENTS_URL } from '../utils/constant.service';
 
 @Injectable({
@@ -10,7 +12,7 @@ export class StudentsService {
 
   constructor(private http: HttpClient) { }
 
-  getStudentListByPage(page: number) {
-    return this.http.get(`${STUDENTS_URL}/?page=${page}`);
+  getStudentListByPage(page: number): Observable<studentResponseListType> {
+    return this.http.get<studentResponseListType>(`${STUDENTS_URL}/?page=${page}`);
   }
 }
