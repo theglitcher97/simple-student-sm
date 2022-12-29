@@ -1,8 +1,7 @@
-import { HttpClient, HttpResponse } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { studentResponseType } from '../domain/types/student-response.type';
-import { studentType } from '../domain/types/student.type';
 import { studentResponseListType } from '../domain/types/students-response-list.type';
 import { STUDENTS_URL } from '../utils/constant.service';
 
