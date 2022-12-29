@@ -10,6 +10,6 @@ export class HomeComponent implements OnInit {
   constructor(private router: Router, private activatedRoute: ActivatedRoute) {}
 
   ngOnInit(): void {
-    this.router.navigate(['students'], { relativeTo: this.activatedRoute });
+    this.router.navigate(['add-student'], { relativeTo: this.activatedRoute });
   }
 }

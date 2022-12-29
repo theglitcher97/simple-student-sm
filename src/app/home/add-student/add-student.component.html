@@ -1,0 +1,29 @@
+<form [formGroup]="newStudentForm" (submit)="onSubmit()">
+  <div class="form-title">
+    <h2>NEW STUDENT INFORMATION</h2>
+  </div>
+  <div class="form-control">
+    <label for="first_name"> First Name </label>
+    <input type="text" placeholder="John " formControlName="first_name"/>
+  </div>
+  <div class="form-control">
+    <label for="last_name"> Last Name </label>
+    <input type="text" name="last_name" placeholder="Doe" formControlName="last_name" />
+  </div>
+  <div class="form-control">
+    <label for="email"> Email </label>
+    <input type="email" name="email" placeholder="JohnDoe@gmail.com" formControlName="email"/>
+  </div>
+  <div class="form-control">
+    <label for="avatar"> Avatar URL </label>
+    <input
+      type="text"
+      name="avatar"
+      formControlName="avatar"
+      placeholder="https://www.facebook.com/profile/avatar.png"
+    />
+  </div>
+  <div class="form-control">
+    <button mat-raised-button color="primary" type="submit" [disabled]="newStudentForm.invalid">ADD</button>
+  </div>
+</form>

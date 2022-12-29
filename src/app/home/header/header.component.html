@@ -1,14 +1,24 @@
 <p>
   <mat-toolbar color="primary">
     <mat-toolbar-row>
-      <span>Students Management System</span>
+      <span>
+        <button class="mat-icon-button">
+          <a routerLink="/home/students" style="color: inherit;"><mat-icon>home</mat-icon></a>
+        </button>
+        Students Management System</span>
       <span class="example-spacer"></span>
       <button
         mat-icon-button
         class="example-icon"
-        aria-label="Example icon-button with menu icon">
+        [matMenuTriggerFor]="menu">
         <mat-icon>menu</mat-icon>
       </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item [routerLink]="['add-student']">
+          <mat-icon >person_add</mat-icon>
+          Add Student
+        </button>
+      </mat-menu>
     </mat-toolbar-row>
   </mat-toolbar>
 </p>

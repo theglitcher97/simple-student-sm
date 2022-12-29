@@ -10,6 +10,8 @@ import { HeaderComponent } from './home/header/header.component';
 import { StudentsListComponent } from './home/students-list/students-list.component';
 import { StudentDetailsComponent } from './home/students-list/student-details/student-details.component';
 import { AngularModules } from './shared/modules/angular-material.module';
+import { AddStudentComponent } from './home/add-student/add-student.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,13 +20,15 @@ import { AngularModules } from './shared/modules/angular-material.module';
     HeaderComponent,
     StudentsListComponent,
     StudentDetailsComponent,
+    AddStudentComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    AngularModules
+    AngularModules,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
