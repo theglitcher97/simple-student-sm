@@ -7,6 +7,7 @@
 }
 
 nav {
+  background-color: #fff;
   max-width: 300px;
   min-width: 150px;
   height: auto;
@@ -40,10 +41,10 @@ nav ul li a {
 }
 
 .student-details {
-  min-width: 400px;
+  min-width: 600px;
   max-width: 600px;
   width: auto;
   margin: 0 auto;
   border-radius: 5px;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.85);
+  // box-shadow: 0 0 2px rgba(0, 0, 0, 0.85);
 }

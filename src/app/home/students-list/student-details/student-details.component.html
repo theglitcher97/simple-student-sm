@@ -1,4 +1,4 @@
-<div *ngIf="student$ | async as student">
+<div *ngIf="student$ | async as student" class="student-container">
   <img [src]="student.avatar" [alt]="student.first_name">
   <h2> {{student.first_name + " " + student.last_name}} </h2>
   <h3> {{student.email}}</h3>
