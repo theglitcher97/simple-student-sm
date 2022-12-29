@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { map, Observable } from 'rxjs';
 import { studentType } from 'src/app/domain/types/student.type';
 import { studentResponseListType } from 'src/app/domain/types/students-response-list.type';
-import { StudentsService } from 'src/app/services/students.service';
+import { StudentsService } from 'src/app/shared/services/students.service';
 
 @Component({
   selector: 'app-students-list',

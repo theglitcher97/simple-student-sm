@@ -3,7 +3,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { map, Observable } from 'rxjs';
 import { studentResponseType } from 'src/app/domain/types/student-response.type';
 import { studentType } from 'src/app/domain/types/student.type';
-import { StudentsService } from 'src/app/services/students.service';
+import { StudentsService } from 'src/app/shared/services/students.service';
 
 @Component({
   selector: 'app-student-details',

@@ -1,9 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { studentResponseType } from '../domain/types/student-response.type';
-import { studentResponseListType } from '../domain/types/students-response-list.type';
-import { STUDENTS_URL } from '../utils/constant.service';
+import { studentResponseType } from '../../domain/types/student-response.type';
+import { studentResponseListType } from '../../domain/types/students-response-list.type';
+import { STUDENTS_URL } from '../../utils/constant.service';
 
 @Injectable({
   providedIn: 'root',

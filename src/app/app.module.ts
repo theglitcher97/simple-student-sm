@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './home/header/header.component';
 import { StudentsListComponent } from './home/students-list/students-list.component';
 import { StudentDetailsComponent } from './home/students-list/student-details/student-details.component';
+import { AngularModules } from './shared/modules/angular-material.module';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { StudentDetailsComponent } from './home/students-list/student-details/st
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    AngularModules
   ],
   providers: [],
   bootstrap: [AppComponent],
