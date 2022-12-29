@@ -16,8 +16,21 @@ export class StudentsListComponent implements OnInit {
   constructor(private studentsService: StudentsService) { }
 
   ngOnInit(): void {
-    this.studentsList$ =  this.studentsService.getStudentListByPage(this.currentPage)
-    .pipe(map((response: studentResponseListType) => response.data))
+    this.getStudentsList();
   }
 
+  changePage(page: number) {
+    this.currentPage = this.currentPage + page <= 0 ? 1 : this.currentPage + page;
+    this.getStudentsList();
+  }
+
+  get current_page () {
+    return this.currentPage
+  }
+
+  getStudentsList() {
+    this.studentsList$ = this.studentsService
+      .getStudentListByPage(this.currentPage)
+      .pipe(map((response: studentResponseListType) => response.data));
+  }
 }

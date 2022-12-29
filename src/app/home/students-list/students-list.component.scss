@@ -17,10 +17,12 @@ nav {
   border-radius: 3px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.85);
   margin-right: 10px;
+  position: relative;
 }
 
 nav ul {
   padding: 0 5px;
+  margin-bottom: 40px;
 }
 
 nav ul li {
@@ -47,4 +49,12 @@ nav ul li a {
   margin: 0 auto;
   border-radius: 5px;
   // box-shadow: 0 0 2px rgba(0, 0, 0, 0.85);
+}
+
+.paginator-container {
+  width: 100%;
+  margin-top: 2px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
 }
